@@ -30,7 +30,7 @@ public class AuthResource {
         UsuarioRepresentation usuario = usuarioService.validarCredenciales(user, password);
 
         if (usuario != null) {
-            String issuer = "matricula-auth";
+            String issuer = "citas-auth";
             long ttl = 3600;
 
             Instant now = Instant.now();
